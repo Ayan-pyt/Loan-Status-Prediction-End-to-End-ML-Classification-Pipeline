@@ -1,5 +1,7 @@
 # 🏦 Loan Status Prediction - End-to-End ML Classification Pipeline
 
+Live demo: https://loan-status-prediction-end-2-end-ml-classification-pipeline-as.streamlit.app/
+
 > A complete machine learning project for predicting loan status using supervised and unsupervised learning techniques. Built with Python, scikit-learn, and deployed with Streamlit.
 
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)]()
