@@ -3,7 +3,6 @@
 > A complete machine learning project for predicting loan status using supervised and unsupervised learning techniques. Built with Python, scikit-learn, and deployed with Streamlit.
 
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)]()
-[![License](https://img.shields.io/badge/License-MIT-green)]()
 [![Status](https://img.shields.io/badge/Status-Complete-brightgreen)]()
 
 ---
@@ -15,7 +14,6 @@
 - [Project Structure](#project-structure)
 - [Dataset](#dataset)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Machine Learning Pipeline](#machine-learning-pipeline)
 - [Model Performance](#model-performance)
 - [Unsupervised Learning](#unsupervised-learning)
@@ -24,7 +22,6 @@
 - [Technologies](#technologies)
 - [Future Improvements](#future-improvements)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -190,52 +187,7 @@ python -c "import pandas, sklearn, streamlit; print('✅ All dependencies instal
 
 ---
 
-## 💻 Usage
-
-### Option 1: Run Streamlit Web Application (Recommended)
-
-```bash
-streamlit run app/app.py
-```
-
-Then open your browser to: **http://localhost:8501**
-
-**How to use:**
-1. Fill in loan details (loan amount, interest rate, etc.)
-2. Select categorical options (loan purpose, employment length, etc.)
-3. Click "🔮 Predict Loan Status"
-4. View prediction result and confidence score
-5. See probability distribution across all loan status classes
-
-### Option 2: Run Jupyter Notebook
-
-```bash
-jupyter notebook notebook/Loan_Status_Prediction_ML.ipynb
-```
-
-Execute cells sequentially to see the full ML pipeline in action.
-
-### Option 3: Use the Saved Model Directly
-
-```python
-import cloudpickle
-import pandas as pd
-from scipy.sparse import hstack, csr_matrix
-
-# Load model components
-with open('model/gb_model.pkl', 'rb') as f:
-    model = cloudpickle.load(f)
-with open('model/gb_scaler.pkl', 'rb') as f:
-    scaler = cloudpickle.load(f)
-
-# Prepare features and make prediction
-# ... (feature preparation code)
-prediction = model.predict(X_processed)
-```
-
----
-
-## 🔧 Machine Learning Pipeline
+##  Machine Learning Pipeline
 
 ### Step 1: Data Loading & Exploration
 - Load dataset from Excel file
@@ -527,25 +479,11 @@ git push origin feature/your-feature-name
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
 ## 👤 Author
 
-**Ayan Pathak**
+**Ayan Sarkar**
 - GitHub: [@Ayan-pyt](https://github.com/Ayan-pyt)
 - Project: [Loan-Status-Prediction](https://github.com/Ayan-pyt/Loan-Status-Prediction-End-to-End-ML-Classification-Pipeline)
-
----
-
-## 🙏 Acknowledgments
-
-- Dataset: Loan Assignment Project (CSE422 - Artificial Intelligence)
-- Inspired by best practices in end-to-end ML projects
-- Built with Python and open-source ML libraries
 
 ---
 
